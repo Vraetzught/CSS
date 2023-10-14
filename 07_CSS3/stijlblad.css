@@ -1,0 +1,261 @@
+/* --------------------------------- Algemene regels ---------------------------------- */
+
+body {
+	background:#FDF6DC;
+	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
+	font-size:90%;
+	color:#968461;
+	margin:0px auto;
+	text-align:center;
+	line-height:1.4em;
+	width:960px;
+}
+
+/* Oefening afgeronde hoeken */
+h1, h2, h3 {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1.5em;
+	text-transform:uppercase;
+	font-weight:normal;
+	text-align:center;	
+	border-radius: 1em;
+}
+
+a:link, a:visited {
+	font-family:georgia, times, serif;
+	font-weight:bold;
+	color:#FC2126;
+	text-decoration:none;
+	border-bottom:1px solid #FC2112;
+	font-size:.8em;
+}
+
+a:hover {
+	border-bottom:1px dotted #FC2112;
+}
+
+a img {
+	border:none;
+}
+
+/* Oefening kleurovergang */
+header, section, article, footer {
+	padding:10px 20px 20px;
+	margin:10px;
+	border:1px solid #FC9F21;	
+	border-radius:.8em;	
+	background-image: linear-gradient(to bottom, #ffedd9, #ffdebf);
+}
+
+/* --------------------------------- Stijlregels voor de Header ---------------------------------- */
+
+header {
+	display:block;
+	position:relative;
+	text-align:left;
+	
+}
+
+/* Oefening animatie */
+header img {
+	position:absolute;
+	top:18px;
+	left:20px;
+	-webkit-animation: beweging 5s infinite;
+	        animation: beweging 5s infinite;	
+}
+
+/* Oefening schaduw */
+header h1 {
+	font-size:4em;
+	text-align:center;
+	text-shadow: 5px 5px 5px black;		
+}
+
+header h2 {
+	margin:-10px 0px 20px;
+	font-size:1.3em;
+	text-align:center;
+}
+
+@-webkit-keyframes beweging {
+	50% {left: 10px;}
+	100% {right: 10px;}
+}
+
+@keyframes beweging {
+	50% {left: 10px;}
+	100% {right: 10px;}
+}
+
+
+
+/* --------------------------------- Stijlregels voor de Navigatie ---------------------------------- */
+
+nav {
+	text-align:center;	
+}
+
+nav ul {
+	padding:0px;
+	list-style-type:none;
+	display:inline;
+}
+
+nav li {
+	margin:0px 10px;
+	padding:0px;
+	list-style-type:none;
+	display:inline;
+}
+
+nav a:link, nav a:visited {
+	font-size:1.4em;
+	font-weight:normal;
+}
+
+/* --------------------------------- Stijlregels voor de Sections ---------------------------------- */
+
+section#left {
+	float:left;
+	width:178px;
+	text-align:left;
+}
+
+section#right {
+	float:right;
+	width:178px;
+	text-align:left;
+}
+
+section h1, section h2, section h3 {
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;
+	text-shadow:0 1px 0 #403232;
+	background: #968866;	
+}
+
+section ul {
+	padding:0px;
+	list-style:none;
+	border-top:1px solid #FC9F21;
+	margin:14px 0px;
+}
+
+section li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+section li a:link, section li a:visited {
+	float:left;
+	width:96%;
+	padding:3px 1%;
+	border-bottom:1px solid #FC9F21;
+}
+
+section li a:hover {
+	background:#FCC786;
+}
+
+/* --------------------------------- Stijlregels voor de articles ---------------------------------- */
+
+article {
+	float:left;
+	width:418px;
+	text-align:left;
+}
+
+article h1 {
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;
+	text-shadow:0 1px 0 #403232;
+	background: #6E634B;
+
+}
+
+article h2, article h3  {
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;
+	text-shadow:0 1px 0 #403232;
+	background: #E44D26;	
+}
+
+article p:first-of-type {
+	font-family:Helvetica, Arial, serif;
+	text-transform:uppercase;
+	border-top:1px dotted #968461;
+	border-bottom:1px dotted #968461;
+	padding:10px 0px;
+	color:#FC2126;
+}
+
+.galerij {
+	text-align:center;	
+}
+
+/* Oefening transparantie transformatie transitie */
+.galerij img{
+	display:inline-block;
+	margin:5px;	
+	border-radius:2em;
+	opacity: 0.5;
+	transition: all 2s;	
+}
+
+.galerij img:hover {
+	opacity: 1;
+	transform: scale(1.1) translateY(20px);
+}
+
+
+/* --------------------------------- Stijlregels voor het formulier ---------------------------------- */
+
+label {
+	display:block;
+	font-weight:bold;
+}
+
+input, textarea {
+	font-family:"Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	font-size:90%;
+	color:#968461;
+	border:1px solid #FC9F21;	
+	border-radius:3px;
+	padding:2px 4px;
+	width:168px;
+	background:#ffedd9;
+}
+
+input:focus, textarea:focus {
+	border:1px solid #E44D26;
+}
+
+button {
+	float:right;
+	font-family:Georgia, times, serif;
+	font-size:1.2em;
+	color:#fff;
+	font-style:italic;
+	border:1px solid #FC2126;	
+	border-radius:1em;
+	padding:3px 12px;
+	background:#E44D26;
+	cursor:pointer;
+}
+
+/* --------------------------------- Stijlregels voor de Footer ---------------------------------- */
+
+footer {
+	display:block;
+	clear:both !important;
+	padding:2px;	
+}
+
+footer a {
+	margin:0px 5px;
+}

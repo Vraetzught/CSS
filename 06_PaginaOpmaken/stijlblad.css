@@ -1,0 +1,257 @@
+/* --------------------------- algemene stijlregels ---------------------------------------*/
+
+body {
+	background:#FDF6DC;
+	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
+	font-size:90%;
+	color:#968461;
+	margin:0px auto;
+	text-align:center;
+	line-height:1.4em;
+	width:960px;
+}
+
+h1, h2, h3 {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1.5em;
+	text-transform:uppercase;
+	font-weight:normal;
+	text-align:center;
+}
+
+a:link, a:visited {
+	font-family:georgia, times, serif;
+	font-weight:bold;
+	color:#FC2126;
+	text-decoration:none;
+	border-bottom:1px solid #FC2112;
+	font-size:.8em;
+}
+
+a:hover {
+	border-bottom:1px dotted #FC2112;
+}
+
+a img {
+	border:none;
+}
+
+header, section, article, footer {
+	padding:10px 20px 20px;
+	margin:10px;
+	border:1px solid #FC9F21;
+	border-radius:8px;
+	-webkit-border-radius:.8em;
+	-moz-border-radius:.8em;
+	background: #ffedd9; /* Oude browsers */
+	background: -moz-linear-gradient(top,  #ffedd9 0%, #ffdebf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffedd9), color-stop(100%,#ffdebf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffedd9 0%,#ffdebf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffedd9 0%,#ffdebf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffedd9 0%,#ffdebf 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffedd9 0%,#ffdebf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffedd9', endColorstr='#ffdebf',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* ----------------------------- Stijlregels voor header ---------------------------------------*/
+
+header {
+	display:block;
+	text-align:left;
+	position: relative;
+}
+
+/* Oefening absolute - fixed */
+header img {
+	position: fixed;
+	top: 50%;
+	left: 0px;
+}
+
+header h1 {
+	font-size:4em;
+	text-align:center;	
+}
+
+header h2 {
+	margin:-10px 0px 20px;
+	font-size:1.3em;
+	text-align:center
+}
+
+/* ----------------------------- Stijlregels voor navigatie/menu ---------------------------------------*/
+
+nav {
+	text-align:center;	
+}
+
+nav ul {
+	padding:0px;
+	list-style-type:none;	
+}
+
+/* Oefening display */
+nav li {
+	margin:0px 10px;
+	padding:0px;
+	list-style-type:none;
+	display: inline;	
+}
+
+nav a:link, nav a:visited {
+	font-size:1.4em;
+	font-weight:normal;
+}
+
+/* ----------------------------- Stijlregels voor section ---------------------------------------*/
+
+/* Oefening float */
+section#left {
+	width:178px;
+	height:200px;
+	text-align:left;
+	float: left;
+
+}
+
+section#right {
+	width:178px;
+	text-align:left;
+	float: right;
+}
+
+section h1, section h2, section h3 {
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;
+	text-shadow:0 1px 0 #403232;
+	background: #968866;
+	-webkit-border-radius:1em;
+	-moz-border-radius:1em;
+	border-radius:1em;
+}
+
+section ul {
+	padding:0px;
+	list-style:none;
+	border-top:1px solid #FC9F21;
+	margin:14px 0px;
+}
+
+section li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+section li a:link, section li a:visited {
+	float:left;
+	width:96%;
+	padding:3px 1%;
+	border-bottom:1px solid #FC9F21;
+}
+
+section li a:hover {
+	background:#FCC786;
+}
+
+/* ----------------------------- Stijlregels voor article ---------------------------------------*/
+
+/* Oefening float */
+article {
+	width:418px;
+	text-align:left;
+	float: left;
+}
+
+/*Oefening relative*/
+article h1 {
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;
+	text-shadow:0 1px 0 #403232;
+	background: #6E634B;
+	-webkit-border-radius:1em;
+	-moz-border-radius:1em;
+	border-radius:1em;
+	position: relative;
+	bottom: 10px;
+}
+
+article h2, article h3  {
+	color:#fff;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;
+	text-shadow:0 1px 0 #403232;
+	background: #E44D26;
+	-webkit-border-radius:1em;
+	-moz-border-radius:1em;
+	border-radius:1em;
+}
+
+article p:first-of-type {
+	font-family:Helvetica, Arial, serif;
+	text-transform:uppercase;
+	border-top:1px dotted #968461;
+	border-bottom:1px dotted #968461;
+	padding:10px 0px;
+	color:#FC2126;
+}
+
+/* ----------------------------- Stijlregels voor formulier ---------------------------------------*/
+
+label {
+	display:block;
+	font-weight:bold;
+}
+
+input, textarea {
+	font-family:"Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	font-size:90%;
+	color:#968461;
+	border:1px solid #FC9F21;
+	border-radius:3px;
+	-webkit-border-radius:.3em;
+	-moz-border-radius:.3em;
+	padding:2px 4px;
+	width:168px;
+	background:#ffedd9;
+}
+
+input:focus, textarea:focus {
+	border:1px solid #E44D26;
+}
+
+button {
+	float:right;
+	font-family:Georgia, times, serif;
+	font-size:1.2em;
+	color:#fff;
+	font-style:italic;
+	border:1px solid #FC2126;
+	border-radius:1em;
+	-webkit-border-radius:1em;
+	-moz-border-radius:1em;
+	padding:3px 12px;
+	background:#E44D26;
+	cursor:pointer;
+}
+
+button:hover {
+	background-position:-350px -82px
+}
+
+/* ----------------------------- Stijlregels voor footer ---------------------------------------*/
+
+/* Oefening float */
+footer {
+	display:block;	
+	width:898px;
+	padding:2px;
+	clear: both;
+}
+
+footer a {
+	margin:0px 5px;
+}

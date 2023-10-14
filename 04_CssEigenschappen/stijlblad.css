@@ -1,0 +1,185 @@
+
+/* Algemene stijlregels */
+body {
+	font-family:"Myriad Pro", Helvetica, Arial, sans-serif;
+	font-size:90%;
+	color:#968461;
+	margin:20px auto;
+	text-align:center;
+	line-height:1.4em;
+	width:500px;
+	background: url("img/background.jpg") repeat fixed;
+}
+
+h1, h2, h3 {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1.5em;
+	font-weight:normal;
+	padding:9px 10px 10px 10px;
+	margin:13px -10px;
+	text-shadow:0 1px 0 #403232;
+	-webkit-border-radius:1em;
+	-moz-border-radius:1em;
+	border-radius:1em;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+a:link, a:visited {
+	font-family:georgia, times, serif;
+	font-weight:bold;
+	color:#056140;
+	text-decoration:none;
+	border-bottom:1px solid #56027D;
+	font-size:.8em;
+}
+
+a:hover {
+	border-bottom:1px dotted #56027D;
+}
+
+
+header, article, footer {
+	padding:10px 20px 20px;
+	margin:10px;
+	border:1px solid #56027D;
+	border-radius:8px;
+	-webkit-border-radius:.8em;
+	-moz-border-radius:.8em;
+	background: #91DAA9; /* Oude browsers */
+	background: -moz-linear-gradient(top,  #91DAA9 0%, #000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#91DAA9), color-stop(100%,#BCDACA)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #91DAA9 0%,#BCDACA 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #91DAA9 0%,#BCDACA 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #91DAA9 0%,#BCDACA 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #91DAA9 0%,#BCDACA 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91DAA9', endColorstr='#BCDACA',GradientType=0 ); /* IE6-9 */
+
+}
+
+header {
+	width:418px;
+}
+
+/* Navigatie */
+nav {
+	text-align:center;	
+}
+
+nav ul {
+	padding:0px;
+	list-style-type:none;
+	display:inline;
+}
+
+nav li {
+	margin:0px 10px;
+	padding:0px;
+	list-style-type:none;
+	display:inline;
+}
+
+nav a:link, nav a:visited {
+	font-size:1.4em;
+	font-weight:normal;
+}
+
+/* Artikel */
+
+article {
+	width:418px;
+	text-align:left;
+}
+
+article h1 {
+	color:#fff;	
+	background-color: #56027D;
+	white-space: 0.5em;
+	text-decoration: blink;
+}
+
+article h2, article h3  {
+	color:#fff;	
+	background-color: #A57EDE;	
+}
+
+article p:first-of-type {
+	color:#56027D;
+	font-family: helvetica, sans-serif;
+	font-style: italic;
+	font-size: 110%;
+	text-indent: 10%;	
+}
+
+span.stijlregel {
+	font-weight: bold;
+}
+
+span.selector {
+	font-variant: small-caps;
+}
+
+article ul {
+	list-style-image: url("img/blokje.png");
+}
+
+/* Tabellen */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th{
+	border: 1px solid #A57EDE;
+	padding:3px;
+}
+
+th {
+	font-size:1.2em;
+	color: white;
+	font-weight: normal;
+	text-align: left;
+	background-color: #A57EDE;
+}
+
+/* specifieke classen en id's */
+
+#spaties{
+	white-space:pre-wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
